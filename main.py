@@ -1,13 +1,17 @@
-# program to calculate the average of two numbers
-#take two numbers as input
-num1 = float(input ("insert your first number\n"))
-num2 = float(input ("insert your second number\n"))
-#declare average = (num1 + num2) /2
-average = (num1 + num2)/2
-#display the average 
-print(average) 
+import add
+import show
+import update 
+import delete
 
-age = input ("ask user for age")
-full_name = input ("ask user for full name")
-if age > == 18 and int (average) > == 20:
-    print (f"{name}, you are not allowed to vote")
+
+add_task_response= add.add_task("Study") 
+print(add_task_response) 
+
+show_task_response= show.show_tasks()
+print(show_task_response)
+
+update_task_response= update.update_tasks("Study", "Code") 
+print(update_task_response) 
+
+delete_task_response= delete.delete_tasks("Study") 
+print(delete_task_response)
